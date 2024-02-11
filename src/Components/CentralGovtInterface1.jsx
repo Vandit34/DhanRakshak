@@ -2,11 +2,9 @@ import React, { useContext, useState } from 'react'
 import { AccountNumberContext } from '../AccountNumberContext.jsx'
 import Update from './Update.jsx'
 import Navbar from './Navbar.jsx'
-import { useHistory } from 'react-router-dom'
 
 function CentralGovtInterface1 () {
   const { accountNumber } = useContext(AccountNumberContext)
-  const history = useHistory()
 
   const copyToClipboard = async () => {
     try {
@@ -17,15 +15,10 @@ function CentralGovtInterface1 () {
     }
   }
   const [totalAmount, setTotalAmount] = useState(0)
-
-  const handleSendClick = () => {
-    history.push('/Submit')
-  }
-
   return (
-    <div >
-      <Navbar/>
+    <div className=''>
       <div className='flex flex-col items-center'>
+        <Navbar/>
         {accountNumber && (
           <button
             onClick={copyToClipboard}
@@ -40,11 +33,12 @@ function CentralGovtInterface1 () {
         </h1>
         <div className='buttons'>
           <button
-            onClick={handleSendClick}
+            onClick={() => history.push('/sender')}
             className='bg-orange-500 font-quicksand text-white font-bold py-2 px-4 rounded mt-3 transition duration-500 ease-in-out'
           >
             Send
-          </button>  
+          </button>
+
         </div>
       </div>
       <section className='updates mt-8'>

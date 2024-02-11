@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { AccountNumberContext } from '../AccountNumberContext.jsx';
 
 const Navbar = () => {
 
@@ -29,19 +28,9 @@ const Navbar = () => {
   // };
 
   return (
-    <form  className='flex flex-col justify-center items-center pt-5'>
-      <h1 className='font-pacifico text-4xl text-green-600 pb-10'>DhanRakshak</h1>
-      {/* <input
-        className='border-2 border-gray-300 bg-white h-10 px-5 pr-10 mt-5 rounded-lg text-sm focus:outline-none'
-        type='text'
-        name='accountNumber'
-        placeholder='Enter Account Number'
-      /> */}
-      {/* <button className='font-quicksand bg-green-600 text-white font-bold py-2 px-4 rounded mt-3 transition duration-500 ease-in-out'>
-        Submit
-      </button> */}
-    </form>
-  );
+<h1 className='font-pacifico text-4xl text-green-600 pb-10 pt-5'>DhanRakshak</h1>
+  
+    );
 };
 
 export default Navbar;

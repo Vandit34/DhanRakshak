@@ -15,6 +15,7 @@ const Sender = ({ accountNumber }) => {
     <>
       <Navbar />
       <div className='flex flex-col items-center mt-10 w-full max-w-md mx-auto px-4 lg:px-0'>
+        
         <input
           className='mt-4 px-3 py-2 border-none rounded-lg w-full bg-blue-800 placeholder-white font-quicksand '
           type='text'

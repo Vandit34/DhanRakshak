@@ -1,28 +1,15 @@
-import React, { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import CentralGovtInterface1 from './Components/CentralGovtInterface1.jsx'
-import { AccountNumberContext } from './AccountNumberContext.jsx'
-import Sender from './Components/Sender.jsx'
-import Receiver from './Components/Receiver.jsx'
-import History from './Components/History.jsx'
+import React, { useState } from 'react';
+import CentralGovtInterface1 from './Components/CentralGovtInterface1.jsx';
+import { AccountNumberContext } from './AccountNumberContext.jsx';
 
-function App () {
-  const [accountNumber, setAccountNumber] = useState(null)
+function App() {
+  const [accountNumber, setAccountNumber] = useState('');
 
   return (
     <AccountNumberContext.Provider value={{ accountNumber, setAccountNumber }}>
-      <Router>
-        <Switch>
-          <Route path="/Submit">
-            <Sender />
-          </Route>
-          <Route path="/">
-            <CentralGovtInterface1/>
-          </Route>
-        </Switch>
-      </Router>
+      <CentralGovtInterface1 />
     </AccountNumberContext.Provider>
-  )
+  );
 }
 
-export default App
+export default App;
