@@ -1,0 +1,27 @@
+[{
+    "name":"yogiji",
+    "role":"CM",
+    "publicViewId":"yogiji-publicid",
+    "transactionAddress":"yogiji-transaction-address",
+    "password":"password"
+},
+{
+    "name":"vandit",
+    "role":"MLA",
+    "publicViewId":"vandit-publicid",
+    "transactionAddress":"vandit-transaction-address",
+    "password":"password"
+},
+{
+    "name":"madhu",
+    "role":"CONTRACTOR",
+    "publicViewId":"madhu-publicid",
+    "transactionAddress":"madhu-transaction-address"
+},
+{
+    "name":"Modiji",
+    "role":"PM",
+    "publicViewId":"modiji-publicid",
+    "transactionAddress":"modiji-transaction-address"
+}]
+
